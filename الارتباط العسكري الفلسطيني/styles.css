@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.news-ticker {
+    width: 100%;
+    background-color:#b44006;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.news {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    animation: ticker 17.52s linear infinite;
+}
+
+.news span {
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* وسائط الإعلام للتجاوب */
+@media (max-width: 1200px) {
+    .news span {
+        font-size: 1.1rem;
+        padding: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .news span {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .news span {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .news span {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+    }
+}
+
